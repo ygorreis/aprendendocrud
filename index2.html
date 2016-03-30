@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Aprendendocrud by ygorreis</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="http://code.jquery.com/jquery-2.2.2.min.js"></script>
+	<script type="text/javascript" src="js/currency.js"></script>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/custom.css" rel="stylesheet">
+	<title></title>
+</head>
+<body>
+	<div class="container-fluid">
+		<section>
+			<div class="row margin10">
+				<div class="col-md-6 col-md-offset-3">
+					<input type="number" min="0" class="form-control" id="valor-moeda" name="valor-moeda" placeholder="Digite um valor" required="">
+				</div>
+			</div>
+			<div class="row margin10">
+				<div class="col-md-6 col-md-offset-3">
+					<select id="unidadesMoedaDe" name="unidadesMoedaDe" class="form-control">
+						<option value="ARS">Argentina Peso</option>
+						<option value="AUD">Australia Dollar</option>                   
+						<option value="BTC">Bitcoin</option>
+						<option value="BRL">Brazil Real</option>
+						<option value="CAD">Canada Dollar</option>
+						<option value="CLP">Chile Peso</option>
+						<option value="CNY">China Yuan Renminbi</option>
+						<option value="CZK">Czech Republic Koruna</option>
+						<option value="DKK">Denmark Krone</option>
+						<option value="EUR">Euro Member Countries</option>
+						<option value="FJD">Fiji Dollar</option>
+						<option value="HNL">Honduras Lempira</option>
+						<option value="HKD">Hong Kong Dollar</option>
+						<option value="HUF">Hungary Forint</option>
+						<option value="ISK">Iceland Krona</option>
+						<option value="INR">India Rupee</option>
+						<option value="IDR">Indonesia Rupiah</option>
+						<option value="ILS">Israel Shekel</option>
+						<option value="JPY">Japan Yen</option>
+						<option value="KRW">Korea (South) Won</option>
+						<option value="MYR">Malaysia Ringgit</option>
+						<option value="MXN">Mexico Peso</option>
+						<option value="NZD">New Zealand Dollar</option>
+						<option value="NOK">Norway Krone</option>
+						<option value="PKR">Pakistan Rupee</option>
+						<option value="PHP">Philippines Peso</option>
+						<option value="PLN">Poland Zloty</option>
+						<option value="RUB">Russia Ruble</option>
+						<option value="SGD">Singapore Dollar</option>
+						<option value="ZAR">South Africa Rand</option>
+						<option value="SEK">Sweden Krona</option>
+						<option value="CHF">Switzerland Franc</option>
+						<option value="TWD">Taiwan New Dollar</option>
+						<option value="THB">Thailand Baht</option>
+						<option value="TRY">Turkey Lira</option>
+						<option value="GBP">United Kingdom Pound</option>
+						<option value="USD" selected="">United States Dollar</option>
+						<option value="VND">Viet Nam Dong</option>
+					</select>
+				</div>
+			</div>
+			<div class="row margin10">
+				<div class="col-md-6 col-md-offset-3">
+					<input type="button" class="btn btn-primary" value="Converter" id="btn-converter">
+					<input type="reset" class="btn btn-primary" value="Reset" id="btn-reset">
+				</div>
+			</div>
+
+			<div class="row margin10">
+				<div class="col-md-6 col-md-offset-3 table-responsive" >
+					<table class="table table-striped" id="content">
+
+					</table>
+				</div>
+			</div>
+		</section>
+	</div>
+</body>
+</html>

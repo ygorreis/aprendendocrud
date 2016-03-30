@@ -2,6 +2,8 @@ $(document).ready(function() {
 	
 	$("#btn-converter").click(function() {
 
+		$("th").addClass("text-center");
+
 		$("#content").empty();
 		valor = $("#valor-moeda").val();
 		unidadesMoedaDe = $("#unidadesMoedaDe").val();

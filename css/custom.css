@@ -1,0 +1,15 @@
+.margin10{
+	margin-top: 10px;
+}
+
+.margin10Left{
+	margin-left: 10px;
+}
+
+.margin10Right{
+	margin-right: 10px;
+}
+
+th{
+	text-align: center !important;
+}

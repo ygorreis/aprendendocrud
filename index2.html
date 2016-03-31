@@ -11,9 +11,10 @@
 	<link rel="stylesheet" type="text/css" href="css/sweetalert.css">
 	<script src="js/sweetalert.min.js"></script>
 	<script type="text/javascript">
-		function showDialog(text){
+		function showDialog(oldValue, text){
 			swal({
-				title: decodeURIComponent(text),
+				title: decodeURIComponent(oldValue),
+				text: decodeURIComponent(text),
 				type: "success",
 				confirmButtonText: "Ok!"
 			});

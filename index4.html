@@ -9,6 +9,8 @@
 	<link href="css/custom.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/sweetalert.css">
 	<script src="js/sweetalert.min.js"></script>
+</head>
+<body>
 	<script type="text/javascript">
 		function showDialog(oldValue, text){
 			swal({
@@ -332,26 +334,24 @@
 			//ultima linha do ready
 		});
 
-		var getUrlParameter = function getUrlParameter(sParam) {
-			var sPageURL = decodeURIComponent(window.location.search.substring(1)),
-			sURLVariables = sPageURL.split('&'),
-			sParameterName,
-			i;
+var getUrlParameter = function getUrlParameter(sParam) {
+	var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+	sURLVariables = sPageURL.split('&'),
+	sParameterName,
+	i;
 
-			for (i = 0; i < sURLVariables.length; i++) {
-				sParameterName = sURLVariables[i].split('=');
-				if (sParameterName[0] === sParam) { return sParameterName[1] === undefined ? true : sParameterName[1]; }
-			}
-		};
-	</script>
-</head>
-<body>
-	<div class="row margin10">
-		<div class="col-md-6 col-md-offset-3 table-responsive" >
-			<table class="table table-striped" id="content">
+	for (i = 0; i < sURLVariables.length; i++) {
+		sParameterName = sURLVariables[i].split('=');
+		if (sParameterName[0] === sParam) { return sParameterName[1] === undefined ? true : sParameterName[1]; }
+	}
+};
+</script>
+<div class="row margin10">
+	<div class="col-md-6 col-md-offset-3 table-responsive" >
+		<table class="table table-striped" id="content">
 
-			</table>
-		</div>
+		</table>
 	</div>
+</div>
 </body>
 </html>
